@@ -1,7 +1,7 @@
 version: '2'
 services:
  web:
-  image: "https://hub.docker.com/repository/docker/mydocker4151/cloudstack"
+  image: "mydocker4151/cloudstack"
   ports:
   - "5000:5000"
  redis:
