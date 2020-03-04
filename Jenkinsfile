@@ -49,7 +49,7 @@ pipeline {
       script {
           docker.withRegistry( 'https://registry.hub.docker.com', 'dockerhub' ) {
              /* Build Docker Image locally */
-             myImage = docker.build("adamtravis/pyimg")
+             myImage = docker.build("mydocker4151/cloudstack")
 
              /* Push the container to the Registry */
              myImage.push()
