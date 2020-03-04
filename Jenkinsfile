@@ -9,7 +9,7 @@ pipeline {
   agent { label 'demo' }
    steps { 
       echo "Checkout Python Repo .."
-      git branch: 'master', url: 'https://github.com/scmlearningcentre/test.git'
+      git branch: 'master', url: 'https://github.com/Devopsmural/cloudstack.git'
 	  echo "Build Python Base Image for Coverage .."
 	  dir ("./proj") {
 	     sh "/usr/bin/docker build -t mycov:demo -f ./Dockerfile.pycov ."
